@@ -1,0 +1,32 @@
+{
+  "name": "expertcall-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "tsx server/index.ts",
+    "dev:all": "concurrently \"npm run dev:api\" \"npm run dev\"",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "evaluate": "tsx scripts/evaluate.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "@vitejs/plugin-react": "latest",
+    "dotenv": "^18.0.2",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "^10.0.5",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
